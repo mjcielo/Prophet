@@ -1,10 +1,17 @@
-
-# Python virtual environment
-backend/.venv/
-
-# Python cache and compiled files
+# Python
 __pycache__/
 *.py[cod]
 
-# Environment variables and secrets
+# Virtual environments
+.venv/
+venv/
+
+# Secrets and local environment
 .env
+.env.*
+
+# Local database
+*.db
+
+# Test caches
+.pytest_cache/

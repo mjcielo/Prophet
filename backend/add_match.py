@@ -7,9 +7,9 @@ db = SessionLocal()
 try:
     match = Match(
         home_team="Manchester United",
-        away_team="Liverpool",
-        kickoff=datetime(2026, 11, 1, 20, 0),
-        status="Scheduled",
+        away_team="Bournemouth",
+        kickoff=datetime(2026, 11, 2, 20, 0),
+        status="scheduled",
     )
     db.add(match)
     db.commit()
