@@ -6,7 +6,7 @@ db = SessionLocal()
 
 try:
     # user
-    user = db.query(User).filter(User.username == "akash_pro").first()
+    user = db.query(User).filter(User.username == "akash_test").first()
 
     # match
     match = db.query(Match).first()

@@ -56,6 +56,7 @@ class Prediction(Base):
     match_id =Column(Integer, ForeignKey("matches.id"), nullable=False)
     predicted_home_score =Column(Integer, nullable=False)
     predicted_away_score =Column(Integer, nullable=False)
+    points = Column(Integer, nullable=True, default=None)
     created_at =Column(DateTime, default=datetime.utcnow)
 
     user = relationship("User", back_populates="predictions")
